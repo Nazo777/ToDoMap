@@ -1,4 +1,4 @@
-＃ TODOMap DB設計
+# TODOMap DB設計
 
 ## listsテーブル
 |Column|Type|Options|
@@ -16,4 +16,3 @@
 |password|string|null: false|
 ### Assocition
   has_many :lists
-  
