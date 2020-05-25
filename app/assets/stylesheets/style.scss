@@ -1,0 +1,31 @@
+*{
+  box-sizing:border-box;
+}
+
+.gmaps{
+  height:100vh;
+}
+.map-header{
+  height:50px;
+  background-color:#191970;
+  font-size:30px;
+}
+.map-header-homebtn{
+  color:white;
+}
+.search{
+  height:100px;
+  background-color:#4169e1;
+}
+.map{
+  width:85%;
+  height:calc(100% - 100px - 50px);
+  background-color:#f5f5f5;
+  float:left;
+}
+.list{
+  width:15%;
+  height:calc(100% - 100px - 50px);
+  background-color:#e0ffff;
+  float:right;
+}
