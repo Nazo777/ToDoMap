@@ -16,6 +16,21 @@
 .search{
   height:100px;
   background-color:#4169e1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.input{
+  height:50px;
+  width:100vh;
+}
+.btn{
+  -webkit-appearance: none; 
+  padding:12px 25px;
+  margin-left:10px;
+}
+::placeholder{
+  text-align: center;
 }
 .map{
   width:85%;
