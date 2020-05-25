@@ -23,11 +23,13 @@
 .input{
   height:50px;
   width:100vh;
+  font-size:20px;
 }
 .btn{
   -webkit-appearance: none; 
   padding:12px 25px;
   margin-left:10px;
+  border:none;
 }
 ::placeholder{
   text-align: center;
