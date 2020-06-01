@@ -1,1 +1,55 @@
-hello!
+<div class="gmaps">
+  <div class='map-header'>
+    <div class='map-header-title'>
+      <p>まっぷの木</p>
+    </div>
+  </div>
+  <form class="search">
+      <div class="search-box">
+        <input class="input" type="text" name="search" placeholder="地名を検索(例:東京　新宿)">
+        <input class="search-btn" type="submit" name="submit" value="検索">
+      </div>
+  </form>
+  <div class="map">
+  </div>
+  <div class="list">
+    <div class=list-title>
+      <h1>リスト一覧</h1>
+    </div>
+    <div class="list-box">
+      <div class="place">
+        <p>ラーメン屋</p>
+      </div>
+      <div class="message">
+        <p>あのラーメン屋のチャーハンが食べたい</p>
+      </div>
+      <div class="complete">
+        <div class="complete-box">
+          <%= link_to '完了' %>
+        </div>
+      </div>
+      <div class="time">
+        <p>2020/11/12 11:30</p>
+      </div>
+    </div>
+    <div class="list-box">
+      <div class="place">
+        <p>スーパー</p>
+      </div>
+      <div class="message">
+        <p>買うもの<br>
+        ・ハム<br>
+        ・りんご<br>
+        </p>
+      </div>
+      <div class="complete">
+        <div class="complete-box">
+          <%= link_to '完了' %>
+        </div>
+      </div>
+      <div class="time">
+        <p>2020/11/12 11:30</p>
+      </div>
+    </div>
+  </div>
+</div>
