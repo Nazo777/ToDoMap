@@ -3,30 +3,33 @@
   text-decoration: none;
 }
 
+a{
+  color:#2f4f4f;
+}
 .gmaps{
   height:100vh;
 }
 .map-header{
-  height:50px;
   background-color:#006400;
   font-size:30px;
+  height:50px;
 }
 .map-header-title{
   color:#f4a460;
 }
 .search{
-  height:100px;
   background-color:#2e8b57;
+  height:100px;
   display:flex;
   justify-content: center;
   align-items: center;
 }
 .input{
+  font-size:20px;
   height:50px;
   width:100vh;
-  font-size:20px;
 }
-.btn{
+.search-btn{
   -webkit-appearance: none; 
   padding:12px 25px;
   margin-left:10px;
@@ -36,55 +39,52 @@
   text-align: center;
 }
 .map{
-  width:80%;
-  height:calc(100% - 100px - 50px);
   background-color:#f5f5f5;
+  height:calc(100% - 100px - 50px);
+  width:80%;
   float:left;
 }
 .list{
-  width:20%;
-  height:calc(100% - 100px - 50px);
   background-color:#deb887;
+  height:calc(100% - 100px - 50px);
+  width:20%;
   float:right;
 }
 .list-title{
   color:#2f4f4f;
   font-size:30px;
-  text-align:center;
   padding:30px 0;
+  text-align:center;
 }
 .list-box{
   background-color:#90ee90;
-  margin:5px 3px;
   padding:0 30px;
+  margin:5px 3px;
   border:1px solid #7fffd4;
   border-radius: 20px;
 }
 .place{
-  text-align:center;
   padding:10px;
+  text-align:center;
 }
 .message{
   text-align:left;
 }
 .complete{
-  text-align:center;
   padding:10px;
-}
-a{
-  color:#2f4f4f;
+  text-align:center;
 }
 .complete-box{
+  background-color:#00ff7f;
+  width: 30%;
+  padding: 5px;
   border: 1px solid #00ff7f;
   border-radius: 5px;
-  background-color:#00ff7f;
-  padding: 5px;
-  width: 30%;
   display:inline-block;
 }
 .time{
-  text-align:right;
-  font-size:10px;
   color:#cd853f;
   padding-bottom:5px;
+  font-size:10px;
+  text-align:right;
 }
