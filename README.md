@@ -3,8 +3,8 @@
 ## listsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|place|string|null:false|
 |message|string|null:false|
-|time|string|
 ### Association
   belong_to :user
 
