@@ -4,18 +4,17 @@
       <p>まっぷの木</p>
     </div>
   </div>
-  <form class="search">
-      <div class="search-box">
-        <input id="address" class="search-address" type="text" name="search" placeholder="地名を検索(例:東京,新宿)">
-        <input id="search-btn" class="search-btn" type="submit" name="submit" value="検索">
-      </div>
-  </form>
+  <div class="search">
+    <input id="search-address" class="search-address" type="text"  placeholder="地名を検索(例:東京,新宿)">
+    <button id="search-btn" class="search-btn">検索</button>
+  </div>
   <div class="map">
     <div id="gmap">
       <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['API_KEY']%>&callback=initMap" async defer></script>
       <script>
         function initMap(){
-          let gmap = document.getElementById('gmap');
+          let gmap = document.getElementById("gmap");
+          let geocoder = new google.maps.Geocoder();
           let map;
           let tokyo = {lat: 35.681167,lng: 139.767052};
 
@@ -26,8 +25,31 @@
             zoomControl: true,
             clickableIcons: false
           });
-        }
 
+          document.getElementById("search-btn").addEventListener('click',function(){
+            geocoder.geocode({
+              address: document.getElementById("search-address").value
+            },function(results,status){
+              if (status !== "OK") {
+                alert("Failed:"+status);
+                return;
+              }
+
+              if(results[0]) {
+                new google.maps.Map(gmap,{
+                  center: results[0].geometry.location,
+                  zoom:14,
+                  disableDefaultUI: true,
+                  zoomControl: true,
+                  clickableIcons: false
+                });
+              }else{
+                alert("結果が見つからないです");
+                return;
+              }
+            });
+          });
+        }
       </script>
     </div>
   </div>
