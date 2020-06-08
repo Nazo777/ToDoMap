@@ -1,4 +1,4 @@
-<div class="gmaps">
+<div class="todomaps">
   <div class='map-header'>
     <div class='map-header-title'>
       <p>まっぷの木</p>
@@ -6,11 +6,30 @@
   </div>
   <form class="search">
       <div class="search-box">
-        <input class="input" type="text" name="search" placeholder="地名を検索(例:東京　新宿)">
-        <input class="search-btn" type="submit" name="submit" value="検索">
+        <input id="address" class="search-address" type="text" name="search" placeholder="地名を検索(例:東京,新宿)">
+        <input id="search-btn" class="search-btn" type="submit" name="submit" value="検索">
       </div>
   </form>
   <div class="map">
+    <div id="gmap">
+      <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['API_KEY']%>&callback=initMap" async defer></script>
+      <script>
+        function initMap(){
+          let gmap = document.getElementById('gmap');
+          let map;
+          let tokyo = {lat: 35.681167,lng: 139.767052};
+
+          map = new google.maps.Map(gmap, {
+            center: tokyo,
+            zoom: 8,
+            disableDefaultUI: true,
+            zoomControl: true,
+            clickableIcons: false
+          });
+        }
+
+      </script>
+    </div>
   </div>
   <div class="list">
     <div class=list-title>
