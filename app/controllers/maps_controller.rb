@@ -1,15 +1,15 @@
 class MapsController < ApplicationController
   def index
-    @map = List.new
-    @maps = List.all
+    @list = List.new
+    @lists = List.all
   end
 
   def create
-    @map = List.new(list_params)
-    if @map.save
+    @list = List.new(list_params)
+    if @list.save
       redirect_to maps_url
     else
-      @maps = List.all
+      @lists = List.all
       render 'maps/index'
     end
   end
