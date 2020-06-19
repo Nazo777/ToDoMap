@@ -87,13 +87,14 @@ a{
   text-align:left;
 }
 .complete{
-  padding:10px;
   text-align:center;
 }
-.complete-box{
+.complete-btn{
+  margin:10px;
+  padding:5px;
+  text-align:center;
   background-color:#00ff7f;
   width: 30%;
-  padding: 5px;
   border: 1px solid #00ff7f;
   border-radius: 5px;
   display:inline-block;
