@@ -4,9 +4,20 @@
       <p>まっぷの木</p>
     </div>
   </div>
-  <div class="search">
-    <input id="search-address" class="search-address" type="textbox"  placeholder="地名を検索(例:東京,新宿)">
-    <button id="search-btn" class="search-btn" onclick="codeaddress()">検索</button>
+  <div class="form">
+    <div class="search">
+      <input id="search-address" class="search-address" type="textbox"  placeholder="地名を検索(例:東京,新宿)※入力必須">
+      <button id="search-btn" class="search-btn" onclick="codeaddress()">検索</button>
+    </div>
+
+    <div class="message-form">
+      <%= form_for @list,url: maps_path do |form| %>
+        <input type='hidden' name='list[address]' id='hidden-address'>
+        <%= form.text_field :title,placeholder: "タイトル(必須)" , :class=>"form-title"%>
+        <%= form.text_area :message,placeholder: "メッセージ" ,:class=>"form-message"%>
+        <%= form.submit "保存",:class=>"form-btn"%>
+      <% end %>
+    </div>
   </div>
   <div class="map">
     <div id="gmap">
@@ -14,6 +25,7 @@
       <script>
         let map
         let geocoder
+        let marker
 
         function initMap(){
           geocoder = new google.maps.Geocoder();
@@ -27,6 +39,21 @@
             zoomControl: true,
             clickableIcons: false
           });
+
+          <% @lists.each do |list| %>
+            pos = new google.maps.LatLng(
+              <%= list.latitude %>, 
+              <%= list.longitude %> 
+            );
+            saveMarker = new google.maps.Marker({
+              map: map,
+              position: pos,
+              icon: {
+                url: ' https://maps.google.com/mapfiles/ms/icons/green-dot.png',
+                scaledSize: new google.maps.Size(40, 40) 
+              }
+            });
+          <% end %>
         }
 
         function codeaddress(){
@@ -37,13 +64,19 @@
             if (status == 'OK') {
               map.setCenter(results[0].geometry.location);
 
-              var marker = new google.maps.Marker({
+              marker = new google.maps.Marker({
                 map: map,
                 position:results[0].geometry.location,
                 animation: google.maps.Animation.DROP
               });
+
+              let title = document.getElementById('list_title');
+              let hidden_address = document.getElementById('hidden-address');
+
+              title.setAttribute("value", inputaddress);
+              hidden_address.setAttribute("value", inputaddress);
             }else{
-              alert('Geocode was not successful for the following reason: ' + status);
+              alert("必須項目を入力してください");
             }
           });
         }
@@ -51,43 +84,13 @@
     </div>
   </div>
   <div class="list">
-    <div class=list-title>
+    <div class="list-title">
       <h1>リスト一覧</h1>
     </div>
-    <div class="list-box">
-      <div class="place">
-        <p>ラーメン屋</p>
-      </div>
-      <div class="message">
-        <p>あのラーメン屋のチャーハンが食べたい</p>
-      </div>
-      <div class="complete">
-        <div class="complete-box">
-          <%= link_to '完了' %>
-        </div>
-      </div>
-      <div class="time">
-        <p>2020/11/12 11:30</p>
-      </div>
-    </div>
-    <div class="list-box">
-      <div class="place">
-        <p>スーパー</p>
-      </div>
-      <div class="message">
-        <p>買うもの<br>
-        ・ハム<br>
-        ・りんご<br>
-        </p>
-      </div>
-      <div class="complete">
-        <div class="complete-box">
-          <%= link_to '完了' %>
-        </div>
-      </div>
-      <div class="time">
-        <p>2020/11/12 11:30</p>
-      </div>
+    <div class="lists">
+      <% @lists.each do |list| %>
+        <%= render partial: "list", locals: { list: list } %>
+      <% end %>
     </div>
   </div>
 </div>
