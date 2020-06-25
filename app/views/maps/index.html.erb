@@ -3,6 +3,9 @@
     <div class='map-header-title'>
       <p>まっぷの木</p>
     </div>
+    <div class='logout-btn'>
+      <%= link_to "ログアウト",destroy_user_session_path,method: :delete %>
+    </div>
   </div>
   <div class="form">
     <div class="search">
