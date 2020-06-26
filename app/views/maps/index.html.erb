@@ -44,6 +44,7 @@
           });
 
           <% @lists.each do |list| %>
+            <% if current_user.id == list.user_id %>
             pos = new google.maps.LatLng(
               <%= list.latitude %>, 
               <%= list.longitude %> 
@@ -56,6 +57,7 @@
                 scaledSize: new google.maps.Size(40, 40) 
               }
             });
+            <% end %>
           <% end %>
         }
 
@@ -92,7 +94,9 @@
     </div>
     <div class="lists">
       <% @lists.each do |list| %>
-        <%= render partial: "list", locals: { list: list } %>
+        <%if current_user.id == list.user_id %>
+          <%= render partial: "list", locals: { list: list } %>
+        <% end %>
       <% end %>
     </div>
   </div>
