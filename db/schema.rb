@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_23_122513) do
+ActiveRecord::Schema.define(version: 2020_06_25_170719) do
 
   create_table "lists", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "title", null: false
@@ -20,8 +20,8 @@ ActiveRecord::Schema.define(version: 2020_06_23_122513) do
     t.float "longitude", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "User_id", null: false
-    t.index ["User_id"], name: "index_lists_on_User_id"
+    t.bigint "user_id"
+    t.index ["user_id"], name: "index_lists_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -37,5 +37,5 @@ ActiveRecord::Schema.define(version: 2020_06_23_122513) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "lists", "Users"
+  add_foreign_key "lists", "users"
 end
