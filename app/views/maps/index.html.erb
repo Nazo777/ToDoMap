@@ -4,7 +4,10 @@
       <p>まっぷの木</p>
     </div>
     <div class='logout-btn'>
-      <%= link_to "ログアウト",destroy_user_session_path,method: :delete %>
+      <ul>
+        <li><%= current_user.Nickname %></li>
+        <li><%= link_to "ログアウト",destroy_user_session_path,method: :delete %></li>
+      </ul>
     </div>
   </div>
   <div class="form">
