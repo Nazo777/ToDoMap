@@ -4,4 +4,6 @@ class List < ApplicationRecord
   validates         :title, presence: true 
   geocoded_by       :address
   before_validation :geocode
+
+  belongs_to :user
 end
