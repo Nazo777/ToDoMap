@@ -72,11 +72,20 @@
             if (status == 'OK') {
               map.setCenter(results[0].geometry.location);
 
+              deletemaker();
+            
               marker = new google.maps.Marker({
                 map: map,
                 position:results[0].geometry.location,
                 animation: google.maps.Animation.DROP
               });
+
+              function deletemaker() {
+                if(marker != null){
+                  marker.setMap(null);
+                }
+                marker = null;
+              }
 
               let title = document.getElementById('list_title');
               let hidden_address = document.getElementById('hidden-address');
