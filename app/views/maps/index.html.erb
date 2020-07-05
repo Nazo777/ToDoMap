@@ -1,27 +1,21 @@
 <div class="todomaps">
   <div class='map-header'>
-    <div class='map-header-title'>
-      <p>まっぷの木</p>
-    </div>
-    <div class='logout-btn'>
-      <ul>
-        <li><%= current_user.Nickname %></li>
-        <li><%= link_to "ログアウト",destroy_user_session_path,method: :delete %></li>
-      </ul>
-    </div>
+    <p class='map-header-title'>ToDoMap</p>
+    <%= link_to "ログアウト",destroy_user_session_path,method: :delete ,:class=>"logout-btn",:style=>"color:white;"%>
+    <p class="current-user-nickname"><%= current_user.Nickname %>さん</p>
   </div>
   <div class="form">
     <div class="search">
-      <input id="search-address" class="search-address" type="textbox"  placeholder="地名を検索(例:東京,新宿)※入力必須">
+      <input id="search-address" class="search-address" type="textbox"  placeholder="地名を検索※投稿するには検索必須">
       <button id="search-btn" class="search-btn" onclick="codeaddress()">検索</button>
     </div>
 
     <div class="message-form">
-      <%= form_for @list,url: maps_path do |form| %>
+      <%= form_for @list,html: { class: "list-form" },url: maps_path do |form| %>
         <input type='hidden' name='list[address]' id='hidden-address'>
         <%= form.text_field :title,placeholder: "タイトル(必須)" , :class=>"form-title"%>
         <%= form.text_area :message,placeholder: "メッセージ" ,:class=>"form-message"%>
-        <%= form.submit "保存",:class=>"form-btn"%>
+        <%= form.submit "投稿",:class=>"form-btn"%>
       <% end %>
     </div>
   </div>
@@ -60,6 +54,10 @@
                 scaledSize: new google.maps.Size(40, 40) 
               }
             });
+            var infowindow = new google.maps.InfoWindow({
+              content: "<div class='info-title'><%= list.title %></div><br><div class='info-message'><%= list.message%></div> "
+            });
+            infowindow.open(map, savemarker);
             <% end %>
           <% end %>
         }
@@ -93,7 +91,7 @@
               title.setAttribute("value", inputaddress);
               hidden_address.setAttribute("value", inputaddress);
             }else{
-              alert("必須項目を入力してください");
+              alert("地名を入力してください");
             }
           });
         }

@@ -2,46 +2,95 @@
   box-sizing:border-box;
   text-decoration: none;
 }
-
-a{
-  color:#2f4f4f;
-}
 .todomaps{
   height:100vh;
 }
 .map-header{
   background-color:#006400;
-  font-size:30px;
   height:50px;
 }
 .map-header-title{
-  color:#f4a460;
+  font-size:30px;
+  color:white;
+  padding:10px;
+  display:inline;
+}
+.logout-btn{
+  padding:7px;
+  margin:5px 20px 5px 0;
+  background-color:rgb(139,69,19);
+  border-radius:5px;
+  float:right;
+}
+.current-user-nickname{
+  color:white;
+  display:inline;
+  float:right;
+  padding:13px;
+  margin-right:20px;
 }
 .form{
   background-color:#2e8b57;
   height:100px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+}
+.search{
+  display:inline;
 }
 .search-address{
   font-size:20px;
   height:50px;
   width:50vh;
+  margin-top:20px;
   margin-left:20px;
   padding:10px;
+  border-style:none;
+  border-radius:20px;
+}
+input[type="textbox"]:focus {
+  outline: none;
 }
 .search-btn{
   font-size:15px;
   padding:10px 20px;
   margin-left:10px;
   border:none;
+  border-style:none;
+  border-radius:20px;
+  cursor: pointer;
 }
 .message-form{
   display:flex;
-  justify-content: column;
   align-items: center;
-  margin: 0 20px;
+  margin-right:20px;
+  float:right;
+}
+.list-form{
+  margin: 20px;
+  display: flex;
+}
+.form-title{
+  margin-right:20px;
+  padding:0 10px;
+  border-style:none;
+  border-radius:20px;
+}
+input[type="text"]:focus {
+  outline: none;
+}
+.form-message{
+  margin-right:20px;
+  padding:0 10px;
+  border-style:none;
+  border-radius:20px;
+}
+textarea:focus {
+  outline: none;
+}
+.form-btn{
+  width:70px;
+  border-style:none;
+  border-radius:20px;
+  cursor: pointer;
 }
 ::placeholder{
   text-align: center;
@@ -55,6 +104,16 @@ a{
 }
 #gmap {
   height: 100%;
+}
+.info-title{
+  text-align:center;
+  font-size:15px;
+}
+.info-message{
+  text-align: center;
+}
+.gm-style-iw > button {
+  display: none !important;
 }
 .list{
   background-color:#deb887;
