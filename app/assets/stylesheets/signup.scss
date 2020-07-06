@@ -1,0 +1,51 @@
+.signup{
+  background: linear-gradient(0deg, rgba(218,153,107,1) 10%, rgba(9,254,93,1) 60%);
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup-form{
+  text-align:center;
+  background-color:rgb(139,69,19);
+  border-radius:20px;
+}
+.signup-form-box{
+  margin:50px;
+}
+.greeting{
+  color:white;
+  font-size:15px;
+  padding-bottom:20px;
+}
+.signup-title{
+  color:white;
+  font-size:30px;
+  padding-bottom:10px;
+  border-bottom: 1px solid white;
+}
+.nickname{
+  width:185px;
+}
+.field{
+  color:white;
+  padding-top:20px;
+}
+.actions{
+  padding:20px 0;
+  border-bottom: 1px solid white;
+}
+.signup-btn{
+  color:white;
+  background-color:rgba(9,254,93,0.8);
+  padding:10px 60px;
+  border-radius:5px;
+  cursor: pointer;
+}
+.signup-link{
+  background-color:rgba(9,254,93,0.8);
+  margin-top:20px;
+  padding:10px;
+  border-radius:5px;
+  display:block;
+}
