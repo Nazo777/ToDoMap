@@ -6,17 +6,17 @@
       <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 
         <div class="field">
-          <%= f.label :Nickname %> <em>(６文字まで)</em><br />
+          <%= f.label :名前 %> <em>(６文字まで)</em><br />
           <%= f.text_field :Nickname, autofocus: true, maxlength: "6" ,:class => "nickname"%>
         </div>
 
         <div class="field">
-          <%= f.label :email %><br >
+          <%= f.label :Eメール %><br >
           <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
         </div>
 
         <div class="field">
-          <%= f.label :password %>
+          <%= f.label :パスワード %>
           <% if @minimum_password_length %>
           <em>(<%= @minimum_password_length %> 文字以上)</em>
           <% end %><br />
@@ -24,7 +24,7 @@
         </div>
 
         <div class="field">
-          <%= f.label :password_confirmation %><br />
+          <%= f.label :パスワード（再確認） %><br />
           <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
         </div>
 
