@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_many :lists
 
+  validates         :Nickname, presence: true
   def self.guest
     find_or_create_by!(email: 'guest@yahoo.co.jp',Nickname: 'guest') do |user|
       user.password = SecureRandom.urlsafe_base64
