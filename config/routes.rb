@@ -5,5 +5,5 @@ Rails.application.routes.draw do
     post 'users/guest_sign_in', to: 'users/sessions#guest'
   end
 
-  resources :maps, only: [:index, :create ,:destroy,:edit,:update]
+  resources :maps, only: [:index, :create ,:destroy]
 end
