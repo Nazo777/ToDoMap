@@ -15,6 +15,18 @@ class MapsController < ApplicationController
     end
   end
 
+  def edit
+    @list = List.find(params[:id])
+  end
+
+  def update
+    list = List.find(params[:id])
+    if list.user_id == current_user.id
+      list.update(list_params)
+      redirect_to maps_url
+    end
+  end
+  
   def destroy
     list = List.find(params[:id])
     list.destroy
