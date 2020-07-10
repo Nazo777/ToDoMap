@@ -1,0 +1,18 @@
+<div class="edit">
+  <div class="edit-form-box">
+    <h1 class="edit-title">メッセージ編集</h1>
+    <%= form_for @list,html: { class: "edit-form" },url: map_path do |form| %>
+      <div>
+        <%= form.text_field :title,placeholder: "タイトル(必須)" , :class=>"form-edit-title"%>
+      </div>
+
+      <div>
+        <%= form.text_area :message,placeholder: "メッセージ" ,:class=>"form-edit-message"%>
+      </div>
+
+      <div>
+        <%= form.submit "変更",:class=>"form-edit-btn"%>
+      </div>
+    <% end %>
+  </div>
+</div>
