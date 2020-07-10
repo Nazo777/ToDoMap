@@ -1,0 +1,40 @@
+.edit{
+  background: linear-gradient(0deg, rgba(218,153,107,1) 10%, rgba(9,254,93,1) 60%);
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.edit-form-box{
+  text-align:center;
+  background-color:rgb(139,69,19);;
+  border-radius:20px;
+}
+.edit-title{
+  color:white;
+  margin:20px;
+  font-size:25px;
+}
+.edit-form{
+  margin: 30px 50px;
+}
+.form-edit-title{
+  padding:0 10px;
+  border:none;
+}
+.form-edit-message{
+  height:150px;
+  margin-top:20px;
+  padding:5px;
+  border:none;
+}
+.form-edit-btn{
+  color:white;
+  width: 200px;
+  height: 40px;
+  margin-top:10px;
+  background-color: rgba(9,254,93,0.8);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}

@@ -7,6 +7,7 @@
   </div>
   <div class="complete">
     <%= link_to '完了' ,"/maps/#{list.id}",method: :delete ,class: 'complete-btn' ,:style=>"color:white;"%>
+    <%= link_to '編集' ,edit_map_path(list) ,class:'edit-btn' , :style=>'color:white;'%>
   </div>
   <div class="time">
     <%= list.created_at.strftime("%Y年%m月%d日 %H時%M分") %>
