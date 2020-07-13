@@ -2,6 +2,7 @@
   <div class='map-header'>
     <p class='map-header-title'>ToDoMap</p>
     <%= link_to "ログアウト",destroy_user_session_path,method: :delete ,:class=>"logout-btn",:style=>"color:white;"%>
+    <%= link_to "使い方",maps_instruction_path %>
     <p class="current-user-nickname"><%= current_user.Nickname %>さん</p>
   </div>
   <div class="form">
