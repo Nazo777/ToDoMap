@@ -10,6 +10,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="todomaps">
+      <% if user_signed_in? %>
+        <div class='map-header'>
+          <p class='map-header-title'>ToDoMap</p>
+          <%= link_to "ログアウト",destroy_user_session_path,method: :delete ,:class=>"logout-btn btn",:style=>"color:white;"%>
+          <%= link_to "使い方",maps_instruction_path ,:class =>"instruction-btn btn",:style=>"color:white;"%>
+          <%= link_to "ホーム",maps_path ,:class => "home-btn btn",:style=>"color:white;"%>
+          <p class="current-user-nickname"><%= current_user.Nickname %>さん</p>
+        </div>
+      <% end %>
+      <%= yield %>
+    </div>
   </body>
 </html>

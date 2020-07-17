@@ -33,6 +33,9 @@ class MapsController < ApplicationController
     redirect_to root_url
   end
 
+  def instruction
+  end
+
   private
   def list_params
     params.require(:list).permit(:address,:latitude, :longitude, :title, :message)
