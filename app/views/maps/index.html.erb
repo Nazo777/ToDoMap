@@ -1,10 +1,3 @@
-<div class="todomaps">
-  <div class='map-header'>
-    <p class='map-header-title'>ToDoMap</p>
-    <%= link_to "ログアウト",destroy_user_session_path,method: :delete ,:class=>"logout-btn",:style=>"color:white;"%>
-    <%= link_to "使い方",maps_instruction_path %>
-    <p class="current-user-nickname"><%= current_user.Nickname %>さん</p>
-  </div>
   <div class="form">
     <div class="search">
       <input id="search-address" class="search-address" type="textbox"  placeholder="地名を検索※投稿するには検索必須">
@@ -15,7 +8,7 @@
       <%= form_for @list,html: { class: "list-form" },url: maps_path do |form| %>
         <input type='hidden' name='list[address]' id='hidden-address'>
         <%= form.text_field :title,placeholder: "タイトル(必須)" , :class=>"form-title"%>
-        <%= form.text_area :message,placeholder: "メッセージ" ,:class=>"form-message"%>
+        <%= form.text_field :message,placeholder: "メッセージ" ,:class=>"form-message"%>
         <%= form.submit "投稿",:class=>"form-btn"%>
       <% end %>
     </div>
@@ -111,4 +104,3 @@
       <% end %>
     </div>
   </div>
-</div>
