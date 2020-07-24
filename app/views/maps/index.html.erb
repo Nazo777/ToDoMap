@@ -15,7 +15,7 @@
   </div>
   <div class="map">
     <div id="gmap">
-      <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['API_KEY']%>&callback=initMap" async defer></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=ENV['GOOGLE_API_KEY']&callback=initMap" async defer></script>
       <script>
         let map
         let geocoder
