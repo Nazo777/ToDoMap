@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   end
 
   resources :maps, only: [:index, :create ,:destroy,:edit,:update]
-  get "maps/instruction",to: 'maps#instruction'
+  resources :instructions, only: [:index]  
 end
