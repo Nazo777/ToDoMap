@@ -1,0 +1,640 @@
+/* line 1, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/edit.scss */
+.edit {
+  background: linear-gradient(0deg, #da996b 10%, #09fe5d 60%);
+  height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 8, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/edit.scss */
+.edit-form-box {
+  text-align: center;
+  background-color: saddlebrown;
+  border-radius: 20px;
+}
+
+/* line 13, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/edit.scss */
+.edit-title {
+  color: white;
+  margin: 20px;
+  font-size: 25px;
+}
+
+/* line 18, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/edit.scss */
+.edit-form {
+  margin: 30px 50px;
+}
+
+/* line 21, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/edit.scss */
+.form-edit-title {
+  padding: 0 10px;
+  border: none;
+}
+
+/* line 25, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/edit.scss */
+.form-edit-message {
+  height: 40px;
+  margin-top: 20px;
+  padding: 5px;
+  border: none;
+}
+
+/* line 31, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/edit.scss */
+.form-edit-btn {
+  color: white;
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: rgba(9, 254, 93, 0.8);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+/* line 1, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/instructions.scss */
+.explanation {
+  width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+  background-color: #EEEEEE;
+}
+
+/* line 7, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/instructions.scss */
+.explanation-title {
+  font-size: 50px;
+  border-bottom: 2px solid black;
+  padding-top: 50px;
+}
+
+/* line 12, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/instructions.scss */
+.step {
+  margin-top: 40px;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+
+/* line 17, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/instructions.scss */
+.step p {
+  margin-bottom: 20px;
+}
+
+/* line 20, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/instructions.scss */
+.image {
+  margin-bottom: 50px;
+}
+
+/* line 23, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/instructions.scss */
+.step1-image {
+  height: 100px;
+  width: 60%;
+}
+
+/* line 27, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/instructions.scss */
+.step2-image {
+  height: 300px;
+  width: 50%;
+}
+
+/* line 31, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/instructions.scss */
+.step3-image {
+  height: 100px;
+  width: 60%;
+}
+
+/* line 35, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/instructions.scss */
+.step-four {
+  border: none;
+}
+
+/* line 38, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/instructions.scss */
+.step4-image {
+  height: 300px;
+  width: 70%;
+}
+/* line 1, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.todomaps {
+  height: 100vh;
+}
+
+/* line 4, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.map-header {
+  background-color: #006400;
+  height: 50px;
+}
+
+/* line 8, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.map-header-title {
+  font-size: 30px;
+  color: white;
+  padding: 10px;
+  display: inline;
+}
+
+/* line 14, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.btn {
+  padding: 7px;
+  margin: 5px 20px 5px 0;
+  background-color: saddlebrown;
+  border-radius: 5px;
+  float: right;
+}
+
+/* line 21, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.current-user-nickname {
+  color: white;
+  display: inline;
+  float: right;
+  padding: 13px;
+  margin-right: 20px;
+}
+
+/* line 28, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.form {
+  background-color: #2e8b57;
+  height: 100px;
+}
+
+/* line 32, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.search {
+  display: inline;
+}
+
+/* line 35, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.search-address {
+  font-size: 20px;
+  height: 50px;
+  width: 50vh;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 10px;
+  border-style: none;
+  border-radius: 20px;
+}
+
+/* line 45, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.search-btn {
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-style: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* line 54, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.message-form {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  float: right;
+}
+
+/* line 60, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.list-form {
+  margin: 30px;
+}
+
+/* line 63, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.form-title {
+  height: 40px;
+  margin-right: 20px;
+  padding: 0 10px;
+  border-style: none;
+  border-radius: 20px;
+}
+
+/* line 70, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.form-message {
+  height: 40px;
+  margin-right: 20px;
+  padding: 0 10px;
+  border-style: none;
+  border-radius: 20px;
+}
+
+/* line 77, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.form-btn {
+  height: 40px;
+  width: 70px;
+  border-style: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* line 84, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+::placeholder {
+  text-align: center;
+}
+
+/* line 87, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.map {
+  background-color: #f5f5f5;
+  height: calc(100% - 100px - 50px);
+  width: 80%;
+  padding: 15px;
+  float: left;
+}
+
+/* line 94, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+#gmap {
+  height: 100%;
+}
+
+/* line 97, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.info-title {
+  text-align: center;
+  font-size: 15px;
+}
+
+/* line 101, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.info-message {
+  text-align: center;
+}
+
+/* line 104, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.gm-style-iw > button {
+  display: none !important;
+}
+
+/* line 107, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.list {
+  background-color: #deb887;
+  height: calc(100% - 100px - 50px);
+  width: 20%;
+  float: right;
+}
+
+/* line 113, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.lists {
+  height: calc(100vh - 260px);
+  overflow: scroll;
+}
+
+/* line 117, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.list-title {
+  color: #2f4f4f;
+  font-size: 30px;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/* line 123, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.list-box {
+  background-color: #90ee90;
+  padding: 0 30px;
+  margin: 5px 3px;
+  border: 1px solid #7fffd4;
+  border-radius: 20px;
+}
+
+/* line 130, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.title {
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 134, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.message {
+  text-align: left;
+}
+
+/* line 137, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.complete {
+  text-align: center;
+}
+
+/* line 140, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.complete-btn, .edit-btn {
+  margin: 10px 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: #00ff7f;
+  width: 30%;
+  border: 1px solid #00ff7f;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+/* line 150, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/maps.scss */
+.time {
+  color: #cd853f;
+  padding-bottom: 5px;
+  font-size: 10px;
+  text-align: right;
+}
+/*
+	TODO will need to remove settings on HTML since we can't namespace it.
+	TODO with the prefix, should I group by selector or property for weight savings?
+*/
+
+html{
+	color:#000;
+	background:#FFF;
+}
+/*
+	TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+	TODO test putting a class on HEAD.
+		- Fails on FF.
+*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,
+img {
+	border:0;
+}
+/*
+	TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-style:normal;
+	font-weight:normal;
+}
+
+ol,
+ul {
+	list-style:none;
+}
+
+caption,
+th {
+	text-align:left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,
+q:after {
+	content:'';
+}
+abbr,
+acronym {
+	border:0;
+	font-variant:normal;
+}
+/* to preserve line-height and selector appearance */
+sup {
+	vertical-align:text-top;
+}
+sub {
+	vertical-align:text-bottom;
+}
+input,
+textarea,
+select {
+	font-family:inherit;
+	font-size:inherit;
+	font-weight:inherit;
+	*font-size:100%; /*to enable resizing for IE*/
+}
+/*because legend doesn't inherit in IE */
+legend {
+	color:#000;
+}
+ 
+/* line 1, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signin.scss */
+.login {
+  background: linear-gradient(0deg, #da996b 10%, #09fe5d 60%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 8, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signin.scss */
+.login-form {
+  text-align: center;
+  background-color: saddlebrown;
+  border-radius: 20px;
+}
+
+/* line 13, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signin.scss */
+.login-form-box {
+  margin: 50px;
+}
+
+/* line 16, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signin.scss */
+.greeting {
+  color: white;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+/* line 21, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signin.scss */
+.login-title {
+  color: white;
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+/* line 27, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signin.scss */
+.field {
+  color: white;
+  padding-top: 20px;
+}
+
+/* line 31, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signin.scss */
+.actions {
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+}
+
+/* line 35, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signin.scss */
+.login-btn {
+  color: white;
+  padding: 10px 60px;
+  border-radius: 5px;
+  background-color: rgba(9, 254, 93, 0.8);
+  cursor: pointer;
+}
+
+/* line 42, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signin.scss */
+.guest-login {
+  background-color: rgba(9, 254, 93, 0.8);
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+}
+
+/* line 49, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signin.scss */
+.signup-link {
+  background-color: rgba(9, 254, 93, 0.8);
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+}
+/* line 1, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signup.scss */
+.signup {
+  background: linear-gradient(0deg, #da996b 10%, #09fe5d 60%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 8, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signup.scss */
+.signup-form {
+  text-align: center;
+  background-color: saddlebrown;
+  border-radius: 20px;
+}
+
+/* line 13, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signup.scss */
+.signup-form-box {
+  margin: 50px;
+}
+
+/* line 16, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signup.scss */
+.greeting {
+  color: white;
+  font-size: 15px;
+  padding-bottom: 20px;
+}
+
+/* line 21, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signup.scss */
+.signup-title {
+  color: white;
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+}
+
+/* line 27, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signup.scss */
+.nickname {
+  width: 185px;
+}
+
+/* line 30, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signup.scss */
+.field {
+  color: white;
+  padding-top: 20px;
+}
+
+/* line 34, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signup.scss */
+.actions {
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+}
+
+/* line 38, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signup.scss */
+.signup-btn {
+  color: white;
+  background-color: rgba(9, 254, 93, 0.8);
+  padding: 10px 60px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* line 45, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/signup.scss */
+.signup-link {
+  background-color: rgba(9, 254, 93, 0.8);
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+}
+/* line 1, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/style.scss */
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* line 5, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/style.scss */
+textarea:focus {
+  outline: none;
+}
+
+/* line 8, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/style.scss */
+input[type="textbox"]:focus {
+  outline: none;
+}
+
+/* line 11, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/style.scss */
+input[type="text"]:focus {
+  outline: none;
+}
+
+/* line 14, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/style.scss */
+input[type="email"]:focus {
+  outline: none;
+}
+
+/* line 18, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/style.scss */
+input[type="password"]:focus {
+  outline: none;
+}
+
+/* line 21, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/style.scss */
+input[type="submit"]:focus {
+  outline: none;
+}
+
+/* line 24, /Users/oonoyuuta/projects/ToDoMap/app/assets/stylesheets/style.scss */
+button:focus {
+  outline: none;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
