@@ -1,10 +1,7 @@
-# アプリ名
-ToDoMap
+# ToDoMap
+[Heroku]: https://todomap777.herokuapp.com
 # 概要
 行きたい場所をマップにメモするアプリ
-# URL
-[linkref]: https://todomap777.herokuapp.com/ "Heroku"
-
 # 機能一覧
 - マップ表示
 - マーカー表示
