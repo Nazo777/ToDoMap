@@ -1,5 +1,5 @@
 # ToDoMap
-Heroku:https://todomap777.herokuapp.com
+Heroku: https://todomap777.herokuapp.com
 # 概要
 行きたい場所をマップにメモするアプリ
 # 機能一覧
